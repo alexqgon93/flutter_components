@@ -33,13 +33,22 @@ class AppRoutes {
         icon: Icons.credit_card_rounded),
   ];
 
-  static Map<String, Widget Function(BuildContext)> routes = {
+  static Map<String, Widget Function(BuildContext)> getAppRoutes() {
+    Map<String, Widget Function(BuildContext)> appRoutes = {};
+
+    for (final option in menuOptions) {
+      appRoutes.addAll({option.route: (context) => option.screen});
+    }
+    return appRoutes;
+  }
+
+  /* static Map<String, Widget Function(BuildContext)> routes = {
     'home': (context) => const HomeScreen(),
     'listView1': (context) => const Listview1Screen(),
     'listView2': (context) => const Listview2Screen(),
     'alert': (context) => const AlertScreen(),
     'card': (context) => const CardScreen(),
-  };
+  }; */
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     return MaterialPageRoute(
