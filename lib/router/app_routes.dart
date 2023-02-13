@@ -28,7 +28,7 @@ class AppRoutes {
         icon: Icons.add_alert_outlined),
     MenuOption(
         route: 'card',
-        name: 'Tarejatas',
+        name: 'Tarjetas',
         screen: const CardScreen(),
         icon: Icons.credit_card_rounded),
   ];
