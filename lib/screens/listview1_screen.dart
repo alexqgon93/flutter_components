@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 class Listview1Screen extends StatelessWidget {
   const Listview1Screen({Key? key}) : super(key: key);
 
-  final options = const ['Megaman', 'Megaman', 'Super Smash', 'Mario'];
+  final options = const ['Megaman', 'Luigi', 'Super Smash', 'Mario'];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Listiew1 TabBar'),
+          title: const Text('ListView1 TabBar'),
         ),
         body: ListView(
           children: [

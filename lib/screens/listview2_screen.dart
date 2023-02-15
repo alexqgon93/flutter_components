@@ -9,7 +9,7 @@ class Listview2Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Listiew2 TabBar'),
+          title: const Text('ListiVew2 TabBar'),
         ),
         body: ListView.separated(
           itemCount: options.length,
