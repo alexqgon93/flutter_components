@@ -26,7 +26,6 @@ class _SliderScreenState extends State<SliderScreen> {
               // divisions: 10,
               onChanged: _sliderEnable
                   ? (value) {
-                      print(value);
                       setState(() {
                         _sliderValue = value;
                       });
